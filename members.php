@@ -24,6 +24,17 @@ $result=mysql_query("SELECT * FROM data WHERE id='$id'") or die('Invalid query: 
 	
 	echo "<center>"."<h2>"."Welcome ".$_SESSION['username']."</h2>"."</center>"; 
 	
+?>
+
+<center>
+<nav>
+<a href="notifications.php">Notifications</a>
+<a href="user_data.php">Your info</a>
+<a href="logout.php">Log Out</a>
+</nav>
+<center>
+
+<?php
 	
 $expire = time();
 
