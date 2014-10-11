@@ -38,10 +38,10 @@ $users=mysql_query("SELECT * FROM data WHERE id='$id'") or die('Invalid query: '
 
 $projects=mysql_query("SELECT * FROM projects WHERE username='$username'") or die('Invalid query:'.mysql_error());
 	
-	while($projectdata=mysql_fetch_array($projects);){
+	while($projectdata=mysql_fetch_array($projects)){
 	
 	echo "<ul><li>Project name :".$projectdata['name']."</li>";
-	echo "<li>Contributions :"$projectdata['contributions']."</li></ul>";}
+	echo "<li>Contributions :".$projectdata['contributions']."</li></ul>";}
 
 $expire = time();
 
