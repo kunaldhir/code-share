@@ -9,8 +9,6 @@ $data=mysql_fetch_array($result);
 	echo "Email ID :".$data['email']."<button>Edit email id</button><br>";
 	echo "Password :".$data['password']."<button>Edit password</button><br>";
 
-?>
-
 if (isset($_POST["edit_user"])){
 	
 	echo"<form method='POST' action='eval($_SERVER['PHP_SELF'];)'>";
@@ -29,3 +27,4 @@ if (isset($_POST["edit_user"])){
 	}
 	
 }
+?>
