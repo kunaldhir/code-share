@@ -12,7 +12,7 @@ Password : <input type='text' name='password'><br><br>
 
 <?php
 	
-	if (isset($_POST["username_submit")){
+	if (isset($_POST["username_submit"]){
 		
 		if ($data['password']==$_POST["password"]){
 		
